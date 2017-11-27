@@ -11859,3 +11859,2584 @@ Processing by AllegroController#index as HTML
 Completed 200 OK in 159ms (Views: 149.1ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-27 21:40:17 +0100
+  
+Mysql2::Error (Can't connect to MySQL server on '127.0.0.1' (10061)):
+  
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `connect'
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-27 21:49:40 +0100
+  
+Mysql2::Error (Can't connect to MySQL server on '127.0.0.1' (10061)):
+  
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `connect'
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-27 21:50:12 +0100
+  
+Mysql2::Error (Can't connect to MySQL server on '127.0.0.1' (10061)):
+  
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `connect'
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-27 21:50:15 +0100
+  
+Mysql2::Error (Can't connect to MySQL server on '127.0.0.1' (10061)):
+  
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `connect'
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 21:50:19 +0100
+  
+Mysql2::Error (Can't connect to MySQL server on '127.0.0.1' (10061)):
+  
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `connect'
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 21:50:35 +0100
+  
+Mysql2::Error (Can't connect to MySQL server on '127.0.0.1' (10061)):
+  
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `connect'
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 21:50:58 +0100
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (12.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (29.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (70.5ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 2530ms (Views: 2429.8ms | ActiveRecord: 42.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-27 22:25:49 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 239ms (Views: 221.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro" for 127.0.0.1 at 2017-11-27 22:25:53 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (1.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 159ms (Views: 149.1ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/login/new" for 127.0.0.1 at 2017-11-27 22:39:57 +0100
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 158ms (Views: 149.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/new" for 127.0.0.1 at 2017-11-27 22:40:20 +0100
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 147ms (Views: 139.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/new" for 127.0.0.1 at 2017-11-27 22:40:29 +0100
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (270.1ms)
+Completed 500 Internal Server Error in 443ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_path' for #<#<Class:0xa9a0f10>:0x9e104b0>
+Did you mean?  user_path):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", users_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___865512796_78714624'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__648076711_91967616'
+Started GET "/login/new" for 127.0.0.1 at 2017-11-27 22:40:55 +0100
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (8.5ms)
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___865512796_59267292'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__648076711_88199124'
+Started GET "/login/new" for 127.0.0.1 at 2017-11-27 22:42:04 +0100
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (257.2ms)
+Completed 500 Internal Server Error in 413ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0xa9a0f10>:0xb07c0d8>):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___865512796_44053752'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__648076711_92499372'
+Started GET "/login/new" for 127.0.0.1 at 2017-11-27 22:42:23 +0100
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___865512796_89877756'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__648076711_91133868'
+Started GET "/allegro" for 127.0.0.1 at 2017-11-27 22:42:49 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.5ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (24.1ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 15.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___865512796_80525244'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__648076711_88823688'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 22:42:54 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___865512796_94048632'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__648076711_92218236'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 22:43:06 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (224.2ms)
+Completed 500 Internal Server Error in 372ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_path' for #<#<Class:0xa9ba260>:0x70dad08>
+Did you mean?  user_path):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", users_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___865512796_86745924'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__648076711_59164140'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 22:43:26 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (1.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"user"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", edit_user_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___865512796_84801540'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__648076711_86121840'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 22:43:37 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.5ms)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___865512796_88474260'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__648076711_86828268'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 22:44:02 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.5ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (20.5ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 13.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___865512796_94771332'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__648076711_59605404'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 22:44:29 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (29.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 18.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___865512796_49078980'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__648076711_86948112'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 22:44:49 +0100
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (33.1ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (11.0ms)
+Completed 500 Internal Server Error in 522ms (ActiveRecord: 19.1ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb__140031449_60374484'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__769848769_33537288'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 22:44:50 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mAllegro Load (3.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (258.3ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 500 Internal Server Error in 2705ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb__140031449_59490144'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__769848769_83632800'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 22:45:20 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_path %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb__140031449_86425788'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__769848769_78490080'
+Started GET "/allegro/" for 127.0.0.1 at 2017-11-27 22:45:44 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.5ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 147ms (Views: 138.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 22:45:59 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 127.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for 127.0.0.1 at 2017-11-27 22:46:56 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 37ms (ActiveRecord: 13.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=show):
+  
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/show" for 127.0.0.1 at 2017-11-27 22:48:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-27 22:48:35 +0100
+Processing by AllegroController#new as HTML
+  Rendering allegro/new.html.erb within layouts/application
+  Rendered allegro/new.html.erb within layouts/application (69.8ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 240ms (Views: 215.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-27 22:48:37 +0100
+Processing by AllegroController#new as HTML
+  Rendering allegro/new.html.erb within layouts/application
+  Rendered allegro/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 149ms (Views: 139.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-27 22:48:56 +0100
+Processing by AllegroController#new as HTML
+  Rendering allegro/new.html.erb within layouts/application
+  Rendered allegro/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 173ms (Views: 164.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-27 22:49:01 +0100
+Processing by AllegroController#new as HTML
+  Rendering allegro/new.html.erb within layouts/application
+  Rendered allegro/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 150ms (Views: 142.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:49:05 +0100
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:51:02 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    1: <%= @user.username %>
+  
+app/views/users/index.html.erb:1:in `_app_views_users_index_html_erb___410984521_89952660'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:51:18 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    1: <%= @users.username %>
+  
+app/views/users/index.html.erb:1:in `_app_views_users_index_html_erb___410984521_99796176'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:52:02 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    1: <%= @users.username %>
+  
+app/views/users/index.html.erb:1:in `_app_views_users_index_html_erb___410984521_95628552'
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-27 22:52:21 +0100
+Processing by AllegroController#new as HTML
+  Rendering allegro/new.html.erb within layouts/application
+  Rendered allegro/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 162ms (Views: 144.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro" for 127.0.0.1 at 2017-11-27 22:52:28 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 155ms (Views: 146.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro/15" for 127.0.0.1 at 2017-11-27 22:52:32 +0100
+Processing by AllegroController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT  `allegros`.* FROM `allegros` WHERE `allegros`.`id` = 15 LIMIT 1[0m
+  Rendering allegro/show.html.erb within layouts/application
+  Rendered allegro/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 150ms (Views: 132.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro/15" for 127.0.0.1 at 2017-11-27 22:52:53 +0100
+Processing by AllegroController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT  `allegros`.* FROM `allegros` WHERE `allegros`.`id` = 15 LIMIT 1[0m
+  Rendering allegro/show.html.erb within layouts/application
+  Rendered allegro/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 153ms (Views: 142.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users1" for 127.0.0.1 at 2017-11-27 22:53:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users1"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users//1" for 127.0.0.1 at 2017-11-27 22:53:04 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 22:53:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 22:53:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 22:53:49 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 172ms (Views: 141.6ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 22:54:01 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 149ms (Views: 138.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 22:54:45 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 176ms (Views: 167.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:54:47 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    1: <%= @users.username %>
+  
+app/views/users/index.html.erb:1:in `_app_views_users_index_html_erb___410984521_87937860'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:56:45 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    1: <%= @users.username %>
+  
+app/views/users/index.html.erb:1:in `_app_views_users_index_html_erb___410984521_103669644'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:57:00 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 167ms (Views: 159.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:57:03 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 201ms (Views: 188.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:58:04 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 158ms (Views: 148.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:58:40 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (234.7ms)
+Completed 500 Internal Server Error in 265ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0xa5a4910>:0xa7f1ba0>):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", user)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___410984521_88051896'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:58:57 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 152ms (Views: 139.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:59:04 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 166ms (Views: 157.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:59:06 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 151ms (Views: 142.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 22:59:07 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 143ms (Views: 136.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:59:10 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 162ms (Views: 157.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 22:59:11 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 151ms (Views: 141.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 22:59:15 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 163ms (Views: 152.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:00:47 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 157ms (Views: 146.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:00:53 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (254.9ms)
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show' for #<#<Class:0xa5a4910>:0xbc25510>):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", users_path(show))%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___410984521_98643324'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:01:05 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (210.2ms)
+Completed 500 Internal Server Error in 241ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show' for #<#<Class:0xa5a4910>:0x9f8c718>):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", users_path(show),)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___410984521_83650164'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:01:19 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (212.0ms)
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_show' for #<#<Class:0xa5a4910>:0xa36b288>
+Did you mean?  users_path):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", users_show)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___410984521_85679400'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:01:29 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 159ms (Views: 151.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:01:39 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", user_path)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___410984521_90869040'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:02:53 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", user_path)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___410984521_102372936'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:03:05 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", user_path)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___410984521_84407184'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:03:13 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (283.6ms)
+Completed 500 Internal Server Error in 441ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0xa5a4910>:0x9df1550>
+Did you mean?  user_url
+               user_path
+               users_url
+               @users):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", users_url(user) %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb__140031449_89756616'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__769848769_82613652'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:03:30 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (213.7ms)
+Completed 500 Internal Server Error in 350ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0xa5a4910>:0xad89ab8>
+Did you mean?  user_url
+               user_path
+               users_url
+               @users):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_url(user) %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb__140031449_91380732'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__769848769_103447680'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:03:42 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 147ms (Views: 137.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:03:45 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 146ms (Views: 136.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:03:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 154ms (Views: 143.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:03:50 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (9.2ms)
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_url %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb__140031449_86932692'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__769848769_85690260'
+Started GET "/articles" for 127.0.0.1 at 2017-11-27 23:03:51 +0100
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 15.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    10:         <li><%= link_to "Article",  articles_path  %></li>
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", user_url %></li>
+    14:       </ul>
+    15:     </nav>
+    16:   </div>
+  
+app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb__140031449_78510120'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__769848769_84474504'
+Started GET "/articles" for 127.0.0.1 at 2017-11-27 23:04:11 +0100
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 157ms (Views: 146.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-11-27 23:04:15 +0100
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 144ms (Views: 151.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:04:20 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 135ms (Views: 131.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:05:21 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (216.2ms)
+Completed 500 Internal Server Error in 357ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `article' for #<#<Class:0xa5a4910>:0x6cc1938>
+Did you mean?  article_url):
+    11:         <li><%= link_to "Users",   users_new_path  %></li>
+    12:         <li><%= link_to "Help",   '#' %></li>
+    13:         <li><%= link_to "Log in", '' %></li>
+    14:         <%= link_to 'Show', article_url(article) %>
+    15:       </ul>
+    16:     </nav>
+    17:   </div>
+  
+app/views/layouts/_header.html.erb:14:in `_app_views_layouts__header_html_erb__140031449_104087748'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__769848769_88480392'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:05:39 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 145ms (Views: 136.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:06:05 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 153ms (Views: 145.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:06:09 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", user_path)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___410984521_96144180'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:08:50 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", user_path)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___410984521_60405480'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:09:01 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (undefined local variable or method `debuger' for #<UsersController:0xb7fc870>
+Did you mean?  debugger):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:09:14 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:12:15 +0100
+Completed 500 Internal Server Error in 181203ms (ActiveRecord: 1.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `show'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:12:19 +0100
+Processing by UsersController#show as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2752.4ms)
+Completed 500 Internal Server Error in 2962ms (ActiveRecord: 19.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `gravatar_for' for #<#<Class:0xa053528>:0xabe28c0>):
+    1: <% provide(:title, @users.username) %>
+    2: <h1>
+    3:   <%= gravatar_for @users %>
+    4:   <%= @users.username %>
+    5: </h1>
+  
+  Rendered users/show.html.erb within layouts/application (3090.7ms)
+app/views/users/show.html.erb:3:in `_app_views_users_show_html_erb___645077385_80892948'
+Completed 500 Internal Server Error in 3251ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `gravatar_for' for #<#<Class:0xa053528>:0xb827ed8>):
+    1: <% provide(:title, @users.username) %>
+    2: <h1>
+    3:   <%= gravatar_for @users %>
+    4:   <%= @users.username %>
+    5: </h1>
+  
+app/views/users/show.html.erb:3:in `_app_views_users_show_html_erb___645077385_80892948'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:12:37 +0100
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (125.1ms)
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 11.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `gravatar_for' for #<#<Class:0x3ce8860>:0x3cd4340>):
+    1: <% provide(:title, @users.username) %>
+    2: <h1>
+    3:   <%= gravatar_for @users %>
+    4:   <%= @users.username %>
+    5: </h1>
+  
+app/views/users/show.html.erb:3:in `_app_views_users_show_html_erb__909659694_31935276'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:14:16 +0100
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 502ms (Views: 480.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:14:48 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", user_path)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___1001665275_78442032'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:19:22 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 183ms (Views: 169.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:19:30 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", user_path)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___1001665275_81968052'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:23:20 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", user_path)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___1001665275_103609440'
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:23:20 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:23:23 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", user_path)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___1001665275_108188100'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 2945ms (Views: 231.5ms | ActiveRecord: 37.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-11-27 23:23:29 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 169ms (Views: 157.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:23:32 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (31.2ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<User:0xc485910>):
+     5:   <div class="col-md-6 col-md-offset-3">
+     6:     <%= form_for(@users) do |f| %>
+     7:         <%= f.label :name %>
+     8:         <%= f.text_field :name %>
+     9: 
+    10:         <%= f.label :password %>
+    11:         <%= f.password_field :password %>
+  
+app/views/users/new.html.erb:8:in `block in _app_views_users_new_html_erb___151931339_103031700'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_103031700'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:23:52 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 157ms (Views: 149.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:23:57 +0100
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:25:35 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 180ms (Views: 170.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:25:38 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u44gAGdMtsiAHofOUADsEs+PIyUGpFjRGuw/QZzmCd/S1YLMKwJdkA4ID2/4ghnyrvFOD+rwjclqcQ+GfIpIgw==", "user"=>{"username"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 418ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:27:40 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 171ms (Views: 154.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:27:48 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aO/lGFPSDGapMI3mg1elfp2ywgUKafhMneHgsapYQQYBtEfUH5znPicmBUcr1VCe/MyvL+Y9LVTtfNB2SjQAWg==", "user"=>{"username"=>"pawel123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (37.5ms)[0m  [1m[32mINSERT INTO `users` (`created_at`, `updated_at`) VALUES ('2017-11-27 22:27:48', '2017-11-27 22:27:48')[0m
+  [1m[35m (63.1ms)[0m  [1m[35mCOMMIT[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 496ms (ActiveRecord: 100.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:28:34 +0100
+  
+SyntaxError (D:/xampp/htdocs/ALLEGRO/app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:28:46 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 193ms (Views: 157.9ms | ActiveRecord: 17.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:28:53 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WcnIG/Ce1DCPnpSmmek5mN+cxT5NVdPqqyBi1coC8UUwkmrXvNA/aAGIHAcxa8x4vuKoFKEBBvLbvVISKm6wGQ==", "user"=>{"username"=>"ppppp", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (39.2ms)[0m  [1m[32mINSERT INTO `users` (`created_at`, `updated_at`) VALUES ('2017-11-27 22:28:53', '2017-11-27 22:28:53')[0m
+  [1m[35m (50.8ms)[0m  [1m[35mCOMMIT[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 478ms (ActiveRecord: 90.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:30:37 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 150ms (Views: 141.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:30:43 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4IczJMmPtTcZ5ObzGNl1WgvfbkP4j33F9fFDlXk75miJ3JHohcFeb5fyblKwW4C6aqEDaRTbqN2FbHNSmVenNA==", "user"=>{"username"=>"sdasd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (24.3ms)[0m  [1m[32mINSERT INTO `users` (`created_at`, `updated_at`) VALUES ('2017-11-27 22:30:43', '2017-11-27 22:30:43')[0m
+  [1m[35m (54.6ms)[0m  [1m[35mCOMMIT[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 494ms (ActiveRecord: 93.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:31:49 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 159ms (Views: 150.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:31:51 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 165ms (Views: 155.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:31:56 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RuzF7Bze2Nft/fbjry2awtrlX1DJy4juKM4myMeLNH4vt2cgUJAzj2PrfkIHr28iu5syeiWfXfZYUxYPJ+d1Ig==", "users"=>{"username"=>"sadasd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (37.2ms)[0m  [1m[32mINSERT INTO `users` (`created_at`, `updated_at`) VALUES ('2017-11-27 22:31:56', '2017-11-27 22:31:56')[0m
+  [1m[35m (34.0ms)[0m  [1m[35mCOMMIT[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 460ms (ActiveRecord: 71.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:34:36 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 180ms (Views: 147.4ms | ActiveRecord: 16.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:34:41 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o7eMxSYbJ49Bi7lIYhnJwrt1pCitvYQIBRO/MiyhKP7K7C4JalXM18+dMenKmzwi2gvJAkHpURB1jo/1zM1pog==", "users"=>{"username"=>"serw", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password_confirmation' for User.):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:35:42 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o7eMxSYbJ49Bi7lIYhnJwrt1pCitvYQIBRO/MiyhKP7K7C4JalXM18+dMenKmzwi2gvJAkHpURB1jo/1zM1pog==", "users"=>{"username"=>"serw", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password_confirmation' for User.):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:36:21 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 155ms (Views: 147.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:36:27 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"INDDY5gvTLaSUevhtHpGMwEHsigA3VQp2VLqYGoI+pJJi2Gv1GGn7hxHY0Ac+LPTYHnfAuyJgTGpz9qnimS7zg==", "users"=>{"username"=>"ewe", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password_confirmation' for User.):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:37:39 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/xampp/htdocs/ALLEGRO/app/views"
+):
+    4: <div class="row">
+    5:   <div class="col-md-6 col-md-offset-3">
+    6:     <%= form_for(@users) do |f| %>
+    7:         <%= render 'shared/error_messages' %>
+    8: 
+    9:         <%= f.label :username %>
+   10:         <%= f.text_field :username, class: 'form-control' %>
+  
+app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb___151931339_97799556'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_97799556'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:37:41 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (264.2ms)
+Completed 500 Internal Server Error in 557ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/xampp/htdocs/ALLEGRO/app/views"
+):
+    4: <div class="row">
+    5:   <div class="col-md-6 col-md-offset-3">
+    6:     <%= form_for(@users) do |f| %>
+    7:         <%= render 'shared/error_messages' %>
+    8: 
+    9:         <%= f.label :username %>
+   10:         <%= f.text_field :username, class: 'form-control' %>
+  
+app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb___151931339_114087780'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_114087780'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:38:05 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/xampp/htdocs/ALLEGRO/app/views"
+):
+    4: <div class="row">
+    5:   <div class="col-md-6 col-md-offset-3">
+    6:     <%= form_for(@users) do |f| %>
+    7:         <%= render 'shared/error_messages' %>
+    8: 
+    9:         <%= f.label :username %>
+   10:         <%= f.text_field :username, class: 'form-control' %>
+  
+app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb___151931339_113261724'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_113261724'
+Started GET "/users" for 127.0.0.1 at 2017-11-27 23:38:14 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    3: 
+    4: <%= link_to("user", users_new_path)%>
+    5: 
+    6: <%= link_to("user", user_path)%>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___1001665275_94608108'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:38:20 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/xampp/htdocs/ALLEGRO/app/views"
+):
+    4: <div class="row">
+    5:   <div class="col-md-6 col-md-offset-3">
+    6:     <%= form_for(@users) do |f| %>
+    7:         <%= render 'shared/error_messages' %>
+    8: 
+    9:         <%= f.label :username %>
+   10:         <%= f.text_field :username, class: 'form-control' %>
+  
+app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb___151931339_44185008'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_44185008'
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:41:10 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/xampp/htdocs/ALLEGRO/app/views"
+):
+    4: <div class="row">
+    5:   <div class="col-md-6 col-md-offset-3">
+    6:     <%= form_for(@users) do |f| %>
+    7:         <%= render 'shared/error_messages' %>
+    8: 
+    9:         <%= f.label :username %>
+   10:         <%= f.text_field :username, class: 'form-control' %>
+  
+app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb___151931339_97425444'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_97425444'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:41:21 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/xampp/htdocs/ALLEGRO/app/views"
+):
+    4: <div class="row">
+    5:   <div class="col-md-6 col-md-offset-3">
+    6:     <%= form_for(@users) do |f| %>
+    7:         <%= render 'shared/error_messages' %>
+    8: 
+    9:         <%= f.label :username %>
+   10:         <%= f.text_field :username, class: 'form-control' %>
+  
+app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb___151931339_106626180'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_106626180'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:42:32 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/xampp/htdocs/ALLEGRO/app/views"
+):
+    4: <div class="row">
+    5:   <div class="col-md-6 col-md-offset-3">
+    6:     <%= form_for(@users) do |f| %>
+    7:         <%= render 'shared/error_messages' %>
+    8: 
+    9:         <%= f.label :username %>
+   10:         <%= f.text_field :username, class: 'form-control' %>
+  
+app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb___151931339_107673264'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_107673264'
+Started GET "/articles" for 127.0.0.1 at 2017-11-27 23:42:47 +0100
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (22.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 183ms (Views: 157.7ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:42:48 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/xampp/htdocs/ALLEGRO/app/views"
+):
+    4: <div class="row">
+    5:   <div class="col-md-6 col-md-offset-3">
+    6:     <%= form_for(@users) do |f| %>
+    7:         <%= render 'shared/error_messages' %>
+    8: 
+    9:         <%= f.label :username %>
+   10:         <%= f.text_field :username, class: 'form-control' %>
+  
+app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb___151931339_109969380'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_109969380'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:43:41 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User:0xd93bc18>):
+    10:         <%= f.text_field :username, class: 'form-control' %>
+    11: 
+    12:         <%= f.label :email %>
+    13:         <%= f.email_field :email, class: 'form-control' %>
+    14: 
+    15:         <%= f.label :password %>
+    16:         <%= f.password_field :password, class: 'form-control' %>
+  
+app/views/users/new.html.erb:13:in `block in _app_views_users_new_html_erb___151931339_113890980'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_113890980'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:44:37 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (30.5ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User:0xd5f4770>):
+    10:         <%= f.text_field :username, class: 'form-control' %>
+    11: 
+    12:         <%= f.label :email %>
+    13:         <%= f.email_field :email, class: 'form-control' %>
+    14: 
+    15:         <%= f.label :password %>
+    16:         <%= f.password_field :password, class: 'form-control' %>
+  
+app/views/users/new.html.erb:13:in `block in _app_views_users_new_html_erb___151931339_112163820'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_112163820'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:44:57 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User:0x9eb1508>):
+    10:         <%= f.text_field :username, class: 'form-control' %>
+    11: 
+    12:         <%= f.label :email %>
+    13:         <%= f.email_field :email, class: 'form-control' %>
+    14: 
+    15:         <%= f.label :password %>
+    16:         <%= f.password_field :password, class: 'form-control' %>
+  
+app/views/users/new.html.erb:13:in `block in _app_views_users_new_html_erb___151931339_83057400'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_83057400'
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(7040311518601890585, 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (37.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(7040311518601890585)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:45:34 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 175ms (Views: 146.7ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:45:43 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/xampp/htdocs/ALLEGRO/app/views"
+):
+    4: <div class="row">
+    5:   <div class="col-md-6 col-md-offset-3">
+    6:     <%= form_for(@users) do |f| %>
+    7:         <%= render 'shared/error_messages' %>
+    8: 
+    9:         <%= f.label :username %>
+   10:         <%= f.text_field :username, class: 'form-control' %>
+  
+app/views/users/new.html.erb:7:in `block in _app_views_users_new_html_erb___151931339_101795532'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb___151931339_101795532'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:45:54 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 149ms (Views: 141.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:46:12 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfGOIoXQr7OhZG44CWFRZoyg0u/cHcLEfX4zhOy/+onYqizuyZ5E6y9y5pmh46SG7d6/xTBJF9wN4wNDDNO71Q==", "user"=>{"username"=>"pawel", "email"=>"aad@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:25:in `user_params'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:47:09 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfGOIoXQr7OhZG44CWFRZoyg0u/cHcLEfX4zhOy/+onYqizuyZ5E6y9y5pmh46SG7d6/xTBJF9wN4wNDDNO71Q==", "user"=>{"username"=>"pawel", "email"=>"aad@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:25:in `user_params'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:47:21 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfGOIoXQr7OhZG44CWFRZoyg0u/cHcLEfX4zhOy/+onYqizuyZ5E6y9y5pmh46SG7d6/xTBJF9wN4wNDDNO71Q==", "user"=>{"username"=>"pawel", "email"=>"aad@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:25:in `user_params'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:48:03 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfGOIoXQr7OhZG44CWFRZoyg0u/cHcLEfX4zhOy/+onYqizuyZ5E6y9y5pmh46SG7d6/xTBJF9wN4wNDDNO71Q==", "user"=>{"username"=>"pawel", "email"=>"aad@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:49:25 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfGOIoXQr7OhZG44CWFRZoyg0u/cHcLEfX4zhOy/+onYqizuyZ5E6y9y5pmh46SG7d6/xTBJF9wN4wNDDNO71Q==", "user"=>{"username"=>"pawel", "email"=>"aad@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 14.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:50:28 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfGOIoXQr7OhZG44CWFRZoyg0u/cHcLEfX4zhOy/+onYqizuyZ5E6y9y5pmh46SG7d6/xTBJF9wN4wNDDNO71Q==", "user"=>{"username"=>"pawel", "email"=>"aad@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(7040311518601890585, 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(7040311518601890585)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:50:50 +0100
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfGOIoXQr7OhZG44CWFRZoyg0u/cHcLEfX4zhOy/+onYqizuyZ5E6y9y5pmh46SG7d6/xTBJF9wN4wNDDNO71Q==", "user"=>{"username"=>"pawel", "email"=>"aad@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (13.0ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password`, `password_confirmation`, `created_at`, `updated_at`) VALUES ('pawel', 'aad@tlen.pl', 1, 1, '2017-11-27 22:50:50', '2017-11-27 22:50:50')[0m
+  [1m[35m (58.0ms)[0m  [1m[35mCOMMIT[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 487ms (ActiveRecord: 81.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:51:06 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfGOIoXQr7OhZG44CWFRZoyg0u/cHcLEfX4zhOy/+onYqizuyZ5E6y9y5pmh46SG7d6/xTBJF9wN4wNDDNO71Q==", "user"=>{"username"=>"pawel", "email"=>"aad@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password`, `password_confirmation`, `created_at`, `updated_at`) VALUES ('pawel', 'aad@tlen.pl', 1, 1, '2017-11-27 22:51:06', '2017-11-27 22:51:06')[0m
+  [1m[35m (95.3ms)[0m  [1m[35mCOMMIT[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 503ms (ActiveRecord: 95.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:51:10 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (23.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 551ms (Views: 543.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:51:24 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PkVndjILZTregBUhsqaaWvt0oD7295L3oWuSPOVJzQRXHsW6fkWOYlCWnYAaJG+6mgrNFBqjR+/R9qL7BSWMWA==", "user"=>{"username"=>"pawel", "email"=>"pawe@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (39.0ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password`, `password_confirmation`, `created_at`, `updated_at`) VALUES ('pawel', 'pawe@tlen.pl', 0, 0, '2017-11-27 22:51:24', '2017-11-27 22:51:24')[0m
+  [1m[35m (71.4ms)[0m  [1m[35mCOMMIT[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 501ms (ActiveRecord: 110.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:51:34 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 189ms (Views: 180.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:51:44 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rW1pgPhd3JOresmIPnRosuV2tGjIW8xr6U8CuPlmiEbENstMtBM3yyVsQSmW9p1ShAjZQiQPGXOZ0jJ/GQrJGg==", "user"=>{"username"=>"sad", "email"=>"asda@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password`, `password_confirmation`, `created_at`, `updated_at`) VALUES ('sad', 'asda@tlen.pl', 0, 0, '2017-11-27 22:51:45', '2017-11-27 22:51:45')[0m
+  [1m[35m (64.6ms)[0m  [1m[35mCOMMIT[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 468ms (ActiveRecord: 64.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:51:55 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 165ms (Views: 148.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:52:24 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xzbAZfIlDyYFC54T06HZDAZklRpTfdKYL4Iifo0ZB0qubWKpvmvkfosdFrJ7IyzsZxr4ML8pB4BfHxK5bXVGFg==", "user"=>{"username"=>"qwe", "email"=>"asdad@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:25:in `user_params'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:56:24 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xzbAZfIlDyYFC54T06HZDAZklRpTfdKYL4Iifo0ZB0qubWKpvmvkfosdFrJ7IyzsZxr4ML8pB4BfHxK5bXVGFg==", "user"=>{"username"=>"qwe", "email"=>"asdad@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:25:in `user_params'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:57:02 +0100
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xzbAZfIlDyYFC54T06HZDAZklRpTfdKYL4Iifo0ZB0qubWKpvmvkfosdFrJ7IyzsZxr4ML8pB4BfHxK5bXVGFg==", "user"=>{"username"=>"dupa", "email"=>"dupa@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:25:in `user_params'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:57:54 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xzbAZfIlDyYFC54T06HZDAZklRpTfdKYL4Iifo0ZB0qubWKpvmvkfosdFrJ7IyzsZxr4ML8pB4BfHxK5bXVGFg==", "user"=>{"username"=>"dupa", "email"=>"dupa@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (19.0ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password`, `password_confirmation`, `created_at`, `updated_at`) VALUES ('dupa', 'dupa@tlen.pl', 0, 0, '2017-11-27 22:57:54', '2017-11-27 22:57:54')[0m
+  [1m[35m (49.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/10
+Completed 302 Found in 107ms (ActiveRecord: 87.6ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2017-11-27 23:57:54 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 10 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `downcase' for 0:Fixnum):
+    1: <% provide(:title, @users.username) %>
+    2: <h1>
+    3:   <%= gravatar_for @users %>
+    4:   <%= @users.username %>
+    5: </h1>
+  
+app/helpers/users_helper.rb:6:in `gravatar_for'
+app/views/users/show.html.erb:3:in `_app_views_users_show_html_erb__459150689_100395996'
+Started GET "/users/10" for 127.0.0.1 at 2017-11-27 23:58:32 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 10 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 186ms (Views: 153.2ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-27 23:58:34 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 154ms (Views: 146.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-27 23:58:46 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zD8veVDx0B8gXtWdnBEJx26KlhQfgsJrQG8wDLJVoL1Mg/HKsAnAuwxTix45ylHUQpy+uML5X4mYF44L+oIjEQ==", "user"=>{"username"=>"du", "email"=>"du@du.du", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (38.1ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password`, `password_confirmation`, `created_at`, `updated_at`) VALUES ('du', 'du@du.du', 0, 0, '2017-11-27 22:58:46', '2017-11-27 22:58:46')[0m
+  [1m[35m (47.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/11
+Completed 302 Found in 94ms (ActiveRecord: 86.9ms)
+
+
+Started GET "/users/11" for 127.0.0.1 at 2017-11-27 23:58:46 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 156ms (Views: 144.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/11" for 127.0.0.1 at 2017-11-28 00:00:29 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 202ms (Views: 180.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-28 00:00:30 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 142ms (Views: 133.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-28 00:00:39 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WU9UXP+4RheNhdz/c6DJNkkcIqXQAIlD/s+VmBxrRoPZ84rvH0BWs6GIgnzWe5ElZQoKCQ17FKEmtyufVLzFLw==", "user"=>{"username"=>"as", "email"=>"asda@tlen.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (41.1ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `password`, `password_confirmation`, `created_at`, `updated_at`) VALUES ('as', 'asda@tlen.pl', 0, 0, '2017-11-27 23:00:39', '2017-11-27 23:00:39')[0m
+  [1m[35m (71.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/12
+Completed 302 Found in 118ms (ActiveRecord: 112.3ms)
+
+
+Started GET "/users/12" for 127.0.0.1 at 2017-11-28 00:00:39 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 153ms (Views: 143.2ms | ActiveRecord: 1.0ms)
+
+

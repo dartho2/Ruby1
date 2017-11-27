@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
 
+  get 'sessions/new'
+
   get 'users/new'
 
-  resources :user
+  resources :users
   resources :login
   resources :articles
   resources :allegro
