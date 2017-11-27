@@ -1,0 +1,2 @@
+class Allegro < ApplicationRecord
+end

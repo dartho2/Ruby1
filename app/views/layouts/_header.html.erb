@@ -1,0 +1,17 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+
+  <title><%= @title %></title>
+
+  <div class="container">
+    <%= link_to "App-li-cat-i-one", '#', id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Allegro",   allegro_index_path  %></li>
+        <li><%= link_to "Article",  articles_path  %></li>
+        <li><%= link_to "Users",   users_new_path  %></li>
+        <li><%= link_to "Help",   '#' %></li>
+        <li><%= link_to "Log in", new_login_path %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
