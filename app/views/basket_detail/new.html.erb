@@ -1,0 +1,45 @@
+
+<h1>Add FV</h1>
+
+<%= form_with scope: @basket_detail, url: basket_detail_index_path , local: true do |form| %>
+
+
+    <p>
+      <%= form.label :fv %><br>
+      <%= form.text_field :fv %>
+    </p>
+    <p>
+      <%= form.label :name_product %><br>
+      <%= form.text_field :name_product %>
+    </p
+    <p>
+      <%= form.label :product_id %><br>
+      <%= form.text_field :product_id %>
+    </p
+    <p>
+      <%= form.label :basket_id %><br>
+      <%= form.text_field :basked_id %>
+    </p
+    <p>
+      <%= form.label :total_price %><br>
+      <%= form.text_field :total_price %>
+    </p>
+
+
+    <p>
+      <%= form.submit %>
+    </p>
+
+
+
+<% end %>
+
+
+
+
+
+
+
+
+
+

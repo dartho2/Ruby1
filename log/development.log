@@ -24790,3 +24790,2686 @@ Completed 200 OK in 661ms (Views: 615.2ms | ActiveRecord: 12.0ms)
   [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (1.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(8737974392511759675)[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:16:45 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (28.0ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<BasketDetail id: 1, basket_id: 2, product_id: 2>):
+    15: 
+    16:       <tr>  <% @basket_detail.each do |product|  %>
+    17: 
+    18:             <td><%= @basket_detail = product.name %></td>
+    19:       </tr>
+    20: 
+    21: <% end %>
+  
+app/views/basket_detail/index.html.erb:18:in `block in _app_views_basket_detail_index_html_erb___506052365_87591420'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_87591420'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:18:09 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `name_product' for #<BasketDetail id: 1, basket_id: 2, product_id: 2>
+Did you mean?  product):
+    15: 
+    16:       <tr>  <% @basket_detail.each do |product|  %>
+    17: 
+    18:             <td><%= @basket_detail = product.name_product %></td>
+    19:       </tr>
+    20: 
+    21: <% end %>
+  
+app/views/basket_detail/index.html.erb:18:in `block in _app_views_basket_detail_index_html_erb___506052365_91920240'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_91920240'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:18:41 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 175ms (Views: 165.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:20:02 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    17: 
+    18: 
+    19:             <td><%= @basket_detail = product.id %></td>
+    20:             <td><%= @basket_detail = basket.id %></td>
+    21:       </tr>
+    22: 
+    23: <% end %>
+  
+app/views/basket_detail/index.html.erb:20:in `block in _app_views_basket_detail_index_html_erb___506052365_98827032'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_98827032'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:20:35 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    17: 
+    18: 
+    19:             <td><%= @basket_detail = product.id %></td>
+    20:             <td><%= @basket_detail = baskets.id %></td>
+    21:       </tr>
+    22: 
+    23: <% end %>
+  
+app/views/basket_detail/index.html.erb:20:in `block in _app_views_basket_detail_index_html_erb___506052365_103697808'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_103697808'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:21:00 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 396ms (Views: 387.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:21:30 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (313.8ms)
+Completed 500 Internal Server Error in 351ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product_id' for #<#<Class:0xa710e58>:0xba2c238>
+Did you mean?  product
+               product_index_url
+               product_index_path
+               product_url):
+    16:       <tr>  <% @basket_detail.each do |product, basket|  %>
+    17: 
+    18: 
+    19:             <td><%= @basket_detail = product_id %></td>
+    20:             <td><%= @basket_detail = product_id %></td>
+    21:       </tr>
+    22: 
+  
+app/views/basket_detail/index.html.erb:19:in `block in _app_views_basket_detail_index_html_erb___506052365_97608720'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_97608720'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:21:43 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 194ms (Views: 182.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:21:55 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for #<BasketDetail id: 1, basket_id: 2, product_id: 2>):
+    16:       <tr>  <% @basket_detail.each do |product, basket|  %>
+    17: 
+    18: 
+    19:             <td><%= @basket_detail = product.all %></td>
+    20:             <td><%= @basket_detail = product %></td>
+    21:       </tr>
+    22: 
+  
+app/views/basket_detail/index.html.erb:19:in `block in _app_views_basket_detail_index_html_erb___506052365_96638328'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_96638328'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:22:31 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name_product' for #<BasketDetail id: 1, basket_id: 2, product_id: 2>
+Did you mean?  product):
+    17: 
+    18: 
+    19:             <td><%= @basket_detail = product.id %></td>
+    20:             <td><%= @basket_detail = product.name_product %></td>
+    21:       </tr>
+    22: 
+    23: <% end %>
+  
+app/views/basket_detail/index.html.erb:20:in `block in _app_views_basket_detail_index_html_erb___506052365_104655384'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_104655384'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:24:05 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 171ms (Views: 162.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:24:32 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 183ms (Views: 174.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:25:39 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    16:       <tr>  <% @basket_detail.each do |product|  %>
+    17: 
+    18: 
+    19:             <td><%= @basket_detail = @product.id %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:       </tr>
+    22: 
+  
+app/views/basket_detail/index.html.erb:19:in `block in _app_views_basket_detail_index_html_erb___506052365_87714612'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_87714612'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:25:53 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name_product' for nil:NilClass):
+    16:       <tr>  <% @basket_detail.each do |product|  %>
+    17: 
+    18: 
+    19:             <td><%= @basket_detail = @product.name_product %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:       </tr>
+    22: 
+  
+app/views/basket_detail/index.html.erb:19:in `block in _app_views_basket_detail_index_html_erb___506052365_46328784'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_46328784'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:26:10 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    16:       <tr>  <% @basket_detail.each do |product|  %>
+    17: 
+    18: 
+    19:             <td><%= @basket_detail = @product.id %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:       </tr>
+    22: 
+  
+app/views/basket_detail/index.html.erb:19:in `block in _app_views_basket_detail_index_html_erb___506052365_96359544'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_96359544'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:26:27 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (28.5ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    16:       <tr>  <% @basket_detail.each do |product|  %>
+    17: 
+    18: 
+    19:             <td><%= @product.id %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:       </tr>
+    22: 
+  
+app/views/basket_detail/index.html.erb:19:in `block in _app_views_basket_detail_index_html_erb___506052365_104627412'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_104627412'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:26:52 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `product' for #<BasketDetail::ActiveRecord_Relation:0xba27618>):
+    16:       <tr>  <% @basket_detail.each do |product|  %>
+    17: 
+    18: 
+    19:             <td><%= @basket_detail.product.id %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:       </tr>
+    22: 
+  
+app/views/basket_detail/index.html.erb:19:in `block in _app_views_basket_detail_index_html_erb___506052365_97596072'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_97596072'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:27:37 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `joins' for 2:Fixnum):
+    16:       <tr>  <% @basket_detail.each do |product|  %>
+    17: 
+    18: 
+    19:             <td><%= @basket_detail= @basket_detail.joins(:product) %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:       </tr>
+    22: 
+  
+app/views/basket_detail/index.html.erb:19:in `block in _app_views_basket_detail_index_html_erb___506052365_82219116'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_82219116'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:27:54 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `product' for #<BasketDetail::ActiveRecord_Relation:0xa8691e0>):
+    16:       <tr>  <% @basket_detail.each do |product|  %>
+    17: 
+    18: 
+    19:             <td><%= @basket_detail= @basket_detail.product %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:       </tr>
+    22: 
+  
+app/views/basket_detail/index.html.erb:19:in `block in _app_views_basket_detail_index_html_erb___506052365_88294188'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_88294188'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:28:13 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name_product' for #<BasketDetail::ActiveRecord_Relation:0xb517420>):
+    16:       <tr>  <% @basket_detail.each do |product|  %>
+    17: 
+    18: 
+    19:             <td><%= @basket_detail= @basket_detail.name_product %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:       </tr>
+    22: 
+  
+app/views/basket_detail/index.html.erb:19:in `block in _app_views_basket_detail_index_html_erb___506052365_94942284'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_94942284'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:28:27 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (232.2ms)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `name_product' for #<#<Class:0xa710e58>:0xba9dfc8>
+Did you mean?  product):
+    16:       <tr>  <% @basket_detail.each do |product|  %>
+    17: 
+    18: 
+    19:             <td><%= @basket_detail= name_product %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:       </tr>
+    22: 
+  
+app/views/basket_detail/index.html.erb:19:in `block in _app_views_basket_detail_index_html_erb___506052365_97841892'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_97841892'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:28:38 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 198ms (Views: 187.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:33:51 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 202ms (Views: 192.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:34:56 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 198ms (Views: 190.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:36:08 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `basket_id' for nil:NilClass):
+    18: 
+    19:             <td><%= @basket_detail= product %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:             <td><%= @basket_detail = basket.basket_id %></td>
+    22:       </tr>
+    23: 
+    24: <% end %>
+  
+app/views/basket_detail/index.html.erb:21:in `block in _app_views_basket_detail_index_html_erb___506052365_92397372'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_92397372'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:36:22 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    18: 
+    19:             <td><%= @basket_detail= product %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:             <td><%= @basket_detail = basket.id %></td>
+    22:       </tr>
+    23: 
+    24: <% end %>
+  
+app/views/basket_detail/index.html.erb:21:in `block in _app_views_basket_detail_index_html_erb___506052365_87799644'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_87799644'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:36:50 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `basket_fv' for nil:NilClass):
+    18: 
+    19:             <td><%= @basket_detail= product %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:             <td><%= @basket_detail = basket.basket_fv %></td>
+    22:       </tr>
+    23: 
+    24: <% end %>
+  
+app/views/basket_detail/index.html.erb:21:in `block in _app_views_basket_detail_index_html_erb___506052365_102105960'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_102105960'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:37:10 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `basket_fv' for 2:Fixnum):
+    18: 
+    19:             <td><%= @basket_detail= product %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:             <td><%= @basket_detail = @basket_detail.basket_fv %></td>
+    22:       </tr>
+    23: 
+    24: <% end %>
+  
+app/views/basket_detail/index.html.erb:21:in `block in _app_views_basket_detail_index_html_erb___506052365_89151000'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_89151000'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:37:28 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `basket_fv' for #<BasketDetail id: 1, basket_id: 2, product_id: 2>
+Did you mean?  basket
+               basket_id
+               basket=
+               basket_id?
+               basket_id=):
+    18: 
+    19:             <td><%= @basket_detail= product %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:             <td><%= @basket_detail = product.basket_fv %></td>
+    22:       </tr>
+    23: 
+    24: <% end %>
+  
+app/views/basket_detail/index.html.erb:21:in `block in _app_views_basket_detail_index_html_erb___506052365_97861452'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_97861452'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:37:44 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (70.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 249ms (Views: 223.8ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:37:52 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  Rendered basket_detail/index.html.erb within layouts/application (28.0ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Basket id: 2, basket_fv: "01/12/2017">):
+    18: 
+    19:             <td><%= @basket_detail= product %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:             <td><%= @basket_detail = product.basket.name %></td>
+    22:       </tr>
+    23: 
+    24: <% end %>
+  
+app/views/basket_detail/index.html.erb:21:in `block in _app_views_basket_detail_index_html_erb___506052365_96860040'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_96860040'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:38:02 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 192ms (Views: 181.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:42:32 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  Rendered basket_detail/index.html.erb within layouts/application (20.6ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name_product' for #<Basket id: 2, basket_fv: "01/12/2017">):
+    18: 
+    19:             <td><%= @basket_detail= product %></td>
+    20:             <td><%= @basket_detail = product.basket_id %></td>
+    21:             <td><%= @basket_detail = product.basket.name_product %></td>
+    22:       </tr>
+    23: 
+    24: <% end %>
+  
+app/views/basket_detail/index.html.erb:21:in `block in _app_views_basket_detail_index_html_erb___506052365_84301560'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_84301560'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:43:43 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 180ms (Views: 171.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:45:02 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  Rendered basket_detail/index.html.erb within layouts/application (51.0ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 17.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Product id: 2, name_product: "drabina 2x3">):
+    17: 
+    18: 
+    19:             <td><%= @basket_detail= product %></td>
+    20:             <td><%= @basket_detail = product.product.name %></td>
+    21:             <td><%= @basket_detail = product.basket.basket_fv %></td>
+    22:       </tr>
+    23: 
+  
+app/views/basket_detail/index.html.erb:20:in `block in _app_views_basket_detail_index_html_erb___506052365_91251240'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_91251240'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:45:19 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `product' for nil:NilClass):
+    17: 
+    18: 
+    19:             <td><%= @basket_detail= product %></td>
+    20:             <td><%= @basket_detail = basket.product.name %></td>
+    21:             <td><%= @basket_detail = product.basket.basket_fv %></td>
+    22:       </tr>
+    23: 
+  
+app/views/basket_detail/index.html.erb:20:in `block in _app_views_basket_detail_index_html_erb___506052365_102532140'
+app/views/basket_detail/index.html.erb:16:in `_app_views_basket_detail_index_html_erb___506052365_102532140'
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:45:31 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (29.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 204ms (Views: 195.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:47:04 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (26.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 210ms (Views: 200.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:57:18 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (29.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 222ms (Views: 209.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail/" for 127.0.0.1 at 2017-11-30 19:58:33 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 218ms (Views: 202.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-30 19:58:52 +0100
+Processing by AllegroController#new as HTML
+  Rendering allegro/new.html.erb within layouts/application
+  Rendered allegro/new.html.erb within layouts/application (72.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 293ms (Views: 234.2ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/allegro" for 127.0.0.1 at 2017-11-30 20:05:04 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 220ms (Views: 161.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-11-30 20:05:05 +0100
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 202ms (Views: 158.4ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:05:06 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (18.0ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User:0xc13a400>):
+    10:         <%= f.text_field :username, class: 'form-control' %>
+    11: 
+    12:         <%= f.label :email %>
+    13:         <%= f.email_field :email, class: 'form-control' %>
+    14: 
+    15:         <%= f.label :password %>
+    16:         <%= f.password_field :password, class: 'form-control' %>
+  
+app/views/users/new.html.erb:13:in `block in _app_views_users_new_html_erb__190532428_103214460'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb__190532428_103214460'
+Started GET "/articles" for 127.0.0.1 at 2017-11-30 20:05:14 +0100
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 194ms (Views: 185.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:05:16 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User:0xbafc828>):
+    10:         <%= f.text_field :username, class: 'form-control' %>
+    11: 
+    12:         <%= f.label :email %>
+    13:         <%= f.email_field :email, class: 'form-control' %>
+    14: 
+    15:         <%= f.label :password %>
+    16:         <%= f.password_field :password, class: 'form-control' %>
+  
+app/views/users/new.html.erb:13:in `block in _app_views_users_new_html_erb__190532428_101178792'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb__190532428_101178792'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:05:56 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User:0xbf912d0>):
+    10:         <%= f.text_field :username, class: 'form-control' %>
+    11: 
+    12:         <%= f.label :email %>
+    13:         <%= f.email_field :email, class: 'form-control' %>
+    14: 
+    15:         <%= f.label :password %>
+    16:         <%= f.password_field :password, class: 'form-control' %>
+  
+app/views/users/new.html.erb:13:in `block in _app_views_users_new_html_erb__190532428_100434228'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb__190532428_100434228'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:06:19 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User:0xb850828>):
+    10:         <%= f.text_field :username, class: 'form-control' %>
+    11: 
+    12:         <%= f.label :email %>
+    13:         <%= f.email_field :email, class: 'form-control' %>
+    14: 
+    15:         <%= f.label :password %>
+    16:         <%= f.password_field :password, class: 'form-control' %>
+  
+app/views/users/new.html.erb:13:in `block in _app_views_users_new_html_erb__190532428_96606540'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb__190532428_96606540'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:07:20 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User:0x54f2088>):
+    10:         <%= f.text_field :username, class: 'form-control' %>
+    11: 
+    12:         <%= f.label :email %>
+    13:         <%= f.email_field :email, class: 'form-control' %>
+    14: 
+    15:         <%= f.label :password %>
+    16:         <%= f.password_field :password, class: 'form-control' %>
+  
+app/views/users/new.html.erb:13:in `block in _app_views_users_new_html_erb__190532428_44495016'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb__190532428_44495016'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:08:20 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 714ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User:0xb0dd110>):
+    10:         <%= f.text_field :username, class: 'form-control' %>
+    11: 
+    12:       
+    13: 
+    14:         <%= f.label :password %>
+    15:         <%= f.password_field :password, class: 'form-control' %>
+    16: 
+  
+app/views/users/new.html.erb:13:in `block in _app_views_users_new_html_erb__190532428_92725284'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb__190532428_92725284'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:08:40 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 178ms (Views: 168.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-30 20:08:48 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/gE539GFrzvsXQXmpH4BlEiVKFm7/pyFdjyVDeCgJrCzCZsgT+UeLU/jx3f/gCq+kg/1pJ06E58mWWBEy0IjUw==", "user"=>{"username"=>"asda", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password_confirmation' for User.):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started GET "/allegro" for 127.0.0.1 at 2017-11-30 20:13:12 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.5ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 204ms (Views: 195.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-11-30 20:13:13 +0100
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 172ms (Views: 164.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:13:14 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 171ms (Views: 162.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:13:15 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 163ms (Views: 155.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro" for 127.0.0.1 at 2017-11-30 20:13:17 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 168ms (Views: 158.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-11-30 20:13:18 +0100
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 144ms (Views: 149.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:13:19 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 171ms (Views: 161.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:13:19 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 170ms (Views: 162.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:13:20 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 183ms (Views: 174.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro" for 127.0.0.1 at 2017-11-30 20:13:21 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 163ms (Views: 154.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro" for 127.0.0.1 at 2017-11-30 20:14:09 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 500 Internal Server Error in 179ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"basket_detail"}, missing required keys: [:id]):
+     6:     <%= link_to "App-li-cat-i-one", '#', id: "logo" %>
+     7:     <nav>
+     8:       <ul class="nav navbar-nav navbar-right">
+     9:         <li><%= link_to "Sprzedaż",   basket_detail_path  %></li>
+    10:         <li><%= link_to "Allegro",   allegro_index_path  %></li>
+    11:         <li><%= link_to "Article",  articles_path  %></li>
+    12:         <li><%= link_to "Users",   users_new_path  %></li>
+  
+app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb__321461961_96152040'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___216672489_83365848'
+Started GET "/allegro" for 127.0.0.1 at 2017-11-30 20:14:37 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"basket_detail"}, missing required keys: [:id]):
+     6:     <%= link_to "App-li-cat-i-one", '#', id: "logo" %>
+     7:     <nav>
+     8:       <ul class="nav navbar-nav navbar-right">
+     9:         <li><%= link_to "Sprzedaż",   basket_detail_url  %></li>
+    10:         <li><%= link_to "Allegro",   allegro_index_path  %></li>
+    11:         <li><%= link_to "Article",  articles_path  %></li>
+    12:         <li><%= link_to "Users",   users_new_path  %></li>
+  
+app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb__321461961_56729640'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___216672489_42540348'
+Started GET "/allegro" for 127.0.0.1 at 2017-11-30 20:15:04 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 166ms (Views: 156.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro" for 127.0.0.1 at 2017-11-30 20:15:45 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (8.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 181ms (Views: 173.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro" for 127.0.0.1 at 2017-11-30 20:15:48 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"basket_detail"}, missing required keys: [:id]):
+     6:     <%= link_to "App-li-cat-i-one", '#', id: "logo" %>
+     7:     <nav>
+     8:       <ul class="nav navbar-nav navbar-right">
+     9:         <li><%= link_to "Sprzedaż",   basket_detail_url %></li>
+    10:         <li><%= link_to "Allegro",   allegro_index_path  %></li>
+    11:         <li><%= link_to "Article",  articles_path  %></li>
+    12:         <li><%= link_to "Users",   users_new_path  %></li>
+  
+app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb__321461961_94280136'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___216672489_104126844'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:15:53 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"basket_detail"}, missing required keys: [:id]):
+     6:     <%= link_to "App-li-cat-i-one", '#', id: "logo" %>
+     7:     <nav>
+     8:       <ul class="nav navbar-nav navbar-right">
+     9:         <li><%= link_to "Sprzedaż",   basket_detail_url %></li>
+    10:         <li><%= link_to "Allegro",   allegro_index_path  %></li>
+    11:         <li><%= link_to "Article",  articles_path  %></li>
+    12:         <li><%= link_to "Users",   users_new_path  %></li>
+  
+app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb__321461961_89467308'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___216672489_101403156'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:15:57 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (15.0ms)
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"basket_detail"}, missing required keys: [:id]):
+     6:     <%= link_to "App-li-cat-i-one", '#', id: "logo" %>
+     7:     <nav>
+     8:       <ul class="nav navbar-nav navbar-right">
+     9:         <li><%= link_to "Sprzedaż",   basket_detail_url %></li>
+    10:         <li><%= link_to "Allegro",   allegro_index_path  %></li>
+    11:         <li><%= link_to "Article",  articles_path  %></li>
+    12:         <li><%= link_to "Users",   users_new_path  %></li>
+  
+app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb__321461961_99474708'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___216672489_91186392'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:16:00 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 500 Internal Server Error in 975ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"basket_detail"}, missing required keys: [:id]):
+     6:     <%= link_to "App-li-cat-i-one", '#', id: "logo" %>
+     7:     <nav>
+     8:       <ul class="nav navbar-nav navbar-right">
+     9:         <li><%= link_to "Sprzedaż",   basket_detail_url %></li>
+    10:         <li><%= link_to "Allegro",   allegro_index_path  %></li>
+    11:         <li><%= link_to "Article",  articles_path  %></li>
+    12:         <li><%= link_to "Users",   users_new_path  %></li>
+  
+app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb__321461961_83518320'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___216672489_103087212'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:16:09 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (240.2ms)
+Completed 500 Internal Server Error in 395ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `basket_detail' for #<#<Class:0xc4dd450>:0xa93c6f8>
+Did you mean?  basket_detail_url):
+     6:     <%= link_to "App-li-cat-i-one", '#', id: "logo" %>
+     7:     <nav>
+     8:       <ul class="nav navbar-nav navbar-right">
+     9:         <li><%= link_to "Sprzedaż",   basket_detail %></li>
+    10:         <li><%= link_to "Allegro",   allegro_index_path  %></li>
+    11:         <li><%= link_to "Article",  articles_path  %></li>
+    12:         <li><%= link_to "Users",   users_new_path  %></li>
+  
+app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb__321461961_93882648'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___216672489_94859952'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:17:09 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (293.2ms)
+Completed 500 Internal Server Error in 461ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `basket_detail_index' for #<#<Class:0xc4dd450>:0xab42c48>
+Did you mean?  basket_detail_index_url
+               basket_detail_index_path
+               basket_detail_url
+               basket_detail_path):
+     6:     <%= link_to "App-li-cat-i-one", '#', id: "logo" %>
+     7:     <nav>
+     8:       <ul class="nav navbar-nav navbar-right">
+     9:         <li><%= link_to "Sprzedaż",   basket_detail_index  %></li>
+    10:         <li><%= link_to "Allegro",   allegro_index_path  %></li>
+    11:         <li><%= link_to "Article",  articles_path  %></li>
+    12:         <li><%= link_to "Users",   users_new_path  %></li>
+  
+app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb__321461961_90572052'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___216672489_89785752'
+Started GET "/users/new" for 127.0.0.1 at 2017-11-30 20:17:20 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 168ms (Views: 160.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:17:23 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (15.6ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 183ms (Views: 162.3ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:18:06 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 182ms (Views: 173.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:18:23 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (27.0ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `basket_fv' for #<BasketDetail id: 1, basket_id: 2, product_id: 2>
+Did you mean?  basket
+               basket_id
+               basket=
+               basket_id?
+               basket_id=):
+    12: 
+    13:       <tr>  <% @basket_detail.each do |product, basket|  %>
+    14: 
+    15:             <td><%= @basket_detail = product.basket_fv %></td>
+    16: 
+    17:       </tr>
+    18: 
+  
+app/views/basket_detail/index.html.erb:15:in `block in _app_views_basket_detail_index_html_erb___506052365_91242228'
+app/views/basket_detail/index.html.erb:13:in `_app_views_basket_detail_index_html_erb___506052365_91242228'
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:18:38 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `basket_fv' for #<BasketDetail::ActiveRecord_Relation:0xa2c4800>):
+    12: 
+    13:       <tr>  <% @basket_detail.each do |product, basket|  %>
+    14: 
+    15:             <td><%= @basket_detail = @basket_detail.basket_fv %></td>
+    16: 
+    17:       </tr>
+    18: 
+  
+app/views/basket_detail/index.html.erb:15:in `block in _app_views_basket_detail_index_html_erb___506052365_85276008'
+app/views/basket_detail/index.html.erb:13:in `_app_views_basket_detail_index_html_erb___506052365_85276008'
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:18:50 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  Rendered basket_detail/index.html.erb within layouts/application (38.0ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `product' for #<BasketDetail::ActiveRecord_Relation:0xbc26458>):
+    12: 
+    13:       <tr>  <% @basket_detail.each do |product, basket|  %>
+    14: 
+    15:             <td><%= @basket_detail = @basket_detail.product.basket_fv %></td>
+    16: 
+    17:       </tr>
+    18: 
+  
+app/views/basket_detail/index.html.erb:15:in `block in _app_views_basket_detail_index_html_erb___506052365_98642508'
+app/views/basket_detail/index.html.erb:13:in `_app_views_basket_detail_index_html_erb___506052365_98642508'
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:19:05 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 208ms (Views: 200.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:31:05 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (64.7ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 251ms (Views: 214.9ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:31:20 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (40.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 229ms (Views: 217.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:31:22 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 191ms (Views: 181.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:31:29 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (81.6ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 252ms (Views: 212.1ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:31:31 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (24.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 188ms (Views: 178.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:31:45 +0100
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  Rendered basket_detail/index.html.erb within layouts/application (135.7ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 753ms (Views: 689.7ms | ActiveRecord: 28.6ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:32:18 +0100
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (52.9ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 232ms (Views: 216.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-30 20:32:46 +0100
+Processing by AllegroController#new as HTML
+  Rendering allegro/new.html.erb within layouts/application
+  Rendered allegro/new.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 209ms (Views: 178.4ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-30 20:35:24 +0100
+Processing by AllegroController#new as HTML
+  Rendering allegro/new.html.erb within layouts/application
+  Rendered allegro/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 206ms (Views: 176.2ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:35:26 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  Rendered basket_detail/index.html.erb within layouts/application (66.6ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 29.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"basket_detail"}, missing required keys: [:id]):
+    15:             <td><%= @basket_detail = product.basket.basket_fv %></td>
+    16:             <td><%= @basket_detail = product.product.name_product %></td>
+    17:             <td><%= @basket_detail = product.product.brutto_price %></td>
+    18:             <td><%= link_to 'Show', basket_detail_path %> </td>td>
+    19:       </tr>
+    20: 
+    21: <% end %>
+  
+app/views/basket_detail/index.html.erb:18:in `block in _app_views_basket_detail_index_html_erb___1067124407_98530524'
+app/views/basket_detail/index.html.erb:13:in `_app_views_basket_detail_index_html_erb___1067124407_98530524'
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:36:29 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  Rendered basket_detail/index.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"basket_detail"}, missing required keys: [:id]):
+    15:             <td><%= @basket_detail = product.basket.basket_fv %></td>
+    16:             <td><%= @basket_detail = product.product.name_product %></td>
+    17:             <td><%= @basket_detail = product.product.brutto_price %></td>
+    18:             <td><%= link_to 'Show', basket_detail_path %> </td>td>
+    19:       </tr>
+    20: 
+    21: <% end %>
+  
+app/views/basket_detail/index.html.erb:18:in `block in _app_views_basket_detail_index_html_erb___1067124407_105095352'
+app/views/basket_detail/index.html.erb:13:in `_app_views_basket_detail_index_html_erb___1067124407_105095352'
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:36:48 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 191ms (Views: 182.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:36:52 +0100
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for BasketDetailController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:37:22 +0100
+Processing by BasketDetailController#new as HTML
+Completed 406 Not Acceptable in 409ms (ActiveRecord: 13.0ms)
+
+
+  
+ActionController::UnknownFormat (BasketDetailController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:37:44 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 170ms (Views: 162.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:38:54 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 174ms (Views: 165.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:38:56 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (250.2ms)
+Completed 500 Internal Server Error in 283ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x9db99c0>:0xc50e9e0>
+Did you mean?  format
+               formats
+               form_tag
+               formats=
+               form_for
+               form_with
+               fork):
+    28: 
+    29: <% end %>
+    30: <p>
+    31:   <%= form.submit %>
+    32: </p>
+    33: <%= link_to 'Back', allegro_index_path %>
+  
+app/views/basket_detail/new.html.erb:31:in `_app_views_basket_detail_new_html_erb___196615461_103315428'
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:39:01 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (287.2ms)
+Completed 500 Internal Server Error in 335ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x9db99c0>:0xa9202a0>
+Did you mean?  format
+               formats
+               form_tag
+               formats=
+               form_for
+               form_with
+               fork):
+    28: 
+    29: <% end %>
+    30: <p>
+    31:   <%= form.submit %>
+    32: </p>
+    33: <%= link_to 'Back', allegro_index_path %>
+  
+app/views/basket_detail/new.html.erb:31:in `_app_views_basket_detail_new_html_erb___196615461_88671336'
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:39:23 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 185ms (Views: 175.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:43:12 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (37.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 258ms (Views: 247.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:46:01 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (71.2ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 248ms (Views: 208.3ms | ActiveRecord: 28.9ms)
+
+
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:46:04 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 181ms (Views: 173.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/allegro" for 127.0.0.1 at 2017-11-30 20:46:11 +0100
+Processing by AllegroController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+fD6r5YLAoHLylfBgJYddCLWxODDSKWVTTFO1DGtBPVDw6Pptow75X8QJbX5XJLJ60l1Xcu+qi7TSmvHAM3IQA==", "basket_detail"=>{"fv"=>"ds", "name_product_"=>"asd", "total_price"=>"ads"}, "commit"=>"Create Basket detail"}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: allegro):
+  
+app/controllers/allegro_controller.rb:51:in `allegro_params'
+app/controllers/allegro_controller.rb:20:in `create'
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:46:39 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"basket_detail"}, missing required keys: [:id]):
+    1: 
+    2: <h1>ALLEGRO - NEw</h1>
+    3: 
+    4: <%= form_with scope: @basket_detail, url: basket_detail_path, local: true do |form| %>
+    5: 
+    6: 
+    7:     <p>
+  
+app/views/basket_detail/new.html.erb:4:in `_app_views_basket_detail_new_html_erb___196615461_108113292'
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:47:03 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (257.2ms)
+Completed 500 Internal Server Error in 288ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `basket_detail_index' for #<#<Class:0xbcdb9b8>:0xab2e428>
+Did you mean?  basket_detail_index_url
+               basket_detail_index_path
+               basket_detail_url
+               basket_detail_path):
+    1: 
+    2: <h1>ALLEGRO - NEw</h1>
+    3: 
+    4: <%= form_with scope: @basket_detail, url: basket_detail_index , local: true do |form| %>
+    5: 
+    6: 
+    7:     <p>
+  
+app/views/basket_detail/new.html.erb:4:in `_app_views_basket_detail_new_html_erb___196615461_89748744'
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:47:15 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 160ms (Views: 151.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro" for 127.0.0.1 at 2017-11-30 20:47:29 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (1.1ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 183ms (Views: 173.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/allegro/new" for 127.0.0.1 at 2017-11-30 20:47:30 +0100
+Processing by AllegroController#new as HTML
+  Rendering allegro/new.html.erb within layouts/application
+  Rendered allegro/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 186ms (Views: 173.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:47:38 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (29.4ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 230ms (Views: 220.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:47:40 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 207ms (Views: 196.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 20:47:48 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u753X10Qa9RPWh7JFGC8t/q+7AA6AItTYKVCwLk8vtTnmUCi0Dn4U/yPmd5FWL14+m4aRn0jUqGzMRKfyZNHiw==", "basket_detail"=>{"fv"=>"11", "name_product_"=>"dra", "total_price"=>"ad"}, "commit"=>"Create Basket detail"}
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `basket_params' for #<BasketDetailController:0xc9c18c0>
+Did you mean?  basket_path):
+  
+app/controllers/basket_detail_controller.rb:16:in `create'
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 20:48:18 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u753X10Qa9RPWh7JFGC8t/q+7AA6AItTYKVCwLk8vtTnmUCi0Dn4U/yPmd5FWL14+m4aRn0jUqGzMRKfyZNHiw==", "basket_detail"=>{"fv"=>"11", "name_product_"=>"dra", "total_price"=>"ad"}, "commit"=>"Create Basket detail"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: basket):
+  
+app/controllers/basket_detail_controller.rb:28:in `basket_params'
+app/controllers/basket_detail_controller.rb:16:in `create'
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 20:48:40 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0f/zLb4+HYCwOpEWxY7yyE1dK7b1Oe5CJqpWMnLs/G6c91HSIF6slhOEU4eecNnil8f2S9P9YVh2z6N7WQ75jQ==", "basket_detail"=>{"fv"=>"11", "name_product_"=>"dra", "total_price"=>"ad"}, "commit"=>"Create Basket detail"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: basket):
+  
+app/controllers/basket_detail_controller.rb:28:in `basket_params'
+app/controllers/basket_detail_controller.rb:16:in `create'
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 20:48:57 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0f/zLb4+HYCwOpEWxY7yyE1dK7b1Oe5CJqpWMnLs/G6c91HSIF6slhOEU4eecNnil8f2S9P9YVh2z6N7WQ75jQ==", "basket_detail"=>{"fv"=>"11", "name_product_"=>"dra", "total_price"=>"ad"}, "commit"=>"Create Basket detail"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: baskets):
+  
+app/controllers/basket_detail_controller.rb:28:in `basket_params'
+app/controllers/basket_detail_controller.rb:16:in `create'
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 20:50:19 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0f/zLb4+HYCwOpEWxY7yyE1dK7b1Oe5CJqpWMnLs/G6c91HSIF6slhOEU4eecNnil8f2S9P9YVh2z6N7WQ75jQ==", "basket_detail"=>{"fv"=>"11", "name_product_"=>"dra", "total_price"=>"ad"}, "commit"=>"Create Basket detail"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: baskets):
+  
+app/controllers/basket_detail_controller.rb:28:in `basket_params'
+app/controllers/basket_detail_controller.rb:16:in `create'
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 20:51:57 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0f/zLb4+HYCwOpEWxY7yyE1dK7b1Oe5CJqpWMnLs/G6c91HSIF6slhOEU4eecNnil8f2S9P9YVh2z6N7WQ75jQ==", "basket_detail"=>{"fv"=>"11", "name_product_"=>"dra", "total_price"=>"ad"}, "commit"=>"Create Basket detail"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `joins' for nil:NilClass):
+  
+app/controllers/basket_detail_controller.rb:16:in `create'
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 20:53:04 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0f/zLb4+HYCwOpEWxY7yyE1dK7b1Oe5CJqpWMnLs/G6c91HSIF6slhOEU4eecNnil8f2S9P9YVh2z6N7WQ75jQ==", "basket_detail"=>{"fv"=>"11", "name_product_"=>"dra", "total_price"=>"ad"}, "commit"=>"Create Basket detail"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: basket):
+  
+app/controllers/basket_detail_controller.rb:29:in `basket_params'
+app/controllers/basket_detail_controller.rb:17:in `create'
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 20:53:23 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0f/zLb4+HYCwOpEWxY7yyE1dK7b1Oe5CJqpWMnLs/G6c91HSIF6slhOEU4eecNnil8f2S9P9YVh2z6N7WQ75jQ==", "basket_detail"=>{"fv"=>"11", "name_product_"=>"dra", "total_price"=>"ad"}, "commit"=>"Create Basket detail"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 208ms (Views: 173.9ms | ActiveRecord: 15.0ms)
+
+
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 20:53:28 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c5l7LslYKQOIaB7to1oMjHIv4BbQOOnRG9abijABQew+kdnRVziYFSvW3Hz4pCemqLU96/b8ZstLs27DG+NEDw==", "basket_detail"=>{"fv"=>"23", "name_product_"=>"23", "total_price"=>"23"}, "commit"=>"Create Basket detail"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 196ms (Views: 178.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allegro" for 127.0.0.1 at 2017-11-30 20:53:30 +0100
+Processing by AllegroController#index as HTML
+  Rendering allegro/index.html.erb within layouts/application
+  [1m[36mAllegro Load (0.0ms)[0m  [1m[34mSELECT `allegros`.* FROM `allegros`[0m
+  Rendered allegro/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 188ms (Views: 161.4ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:53:33 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (30.6ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 198ms (Views: 187.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 20:57:30 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (70.7ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 251ms (Views: 213.9ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 20:57:32 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 159ms (Views: 151.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 20:57:36 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JISol9y4707DMCgLISF2nABYNy4+0K/7aJ0Cnm4/Am54o59qUZF8yXDlrxxwGXdTAIjBaHnzdgm7CVLBHpD7MQ==", "basket_detail"=>{"fv"=>"sss", "name_product_"=>"ss", "total_price"=>"ss"}, "commit"=>"Create Basket detail"}
+Unpermitted parameter: :name_product_
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'fv' for BasketDetail.):
+  
+app/controllers/basket_detail_controller.rb:17:in `create'
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 21:02:32 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 203ms (Views: 189.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 21:02:41 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 174ms (Views: 165.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 21:03:01 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 164ms (Views: 156.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 21:04:25 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"grAbOMCXyltFBc4vcieXrqv3OTIEnii8WYf6Yu0wSp3PuLnHXvd7Tea7DL4p2byEcW3kzyJap6YJ4g8rxtJPfg==", "basket_detail"=>{"fv"=>"11", "name_product"=>"drabina 11", "product_id"=>"4", "basked_id"=>"5", "total_price"=>"100"}, "commit"=>"Create Basket detail"}
+Unpermitted parameters: :fv, :name_product, :basked_id, :total_price
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/basket_detail_controller.rb:34:in `product_params'
+app/controllers/basket_detail_controller.rb:18:in `create'
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 21:06:29 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"grAbOMCXyltFBc4vcieXrqv3OTIEnii8WYf6Yu0wSp3PuLnHXvd7Tea7DL4p2byEcW3kzyJap6YJ4g8rxtJPfg==", "basket_detail"=>{"fv"=>"11", "name_product"=>"drabina 11", "product_id"=>"4", "basked_id"=>"5", "total_price"=>"100"}, "commit"=>"Create Basket detail"}
+Unpermitted parameters: :fv, :name_product, :basked_id, :total_price
+Completed 400 Bad Request in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/basket_detail_controller.rb:39:in `product_params'
+app/controllers/basket_detail_controller.rb:18:in `create'
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 21:07:01 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"grAbOMCXyltFBc4vcieXrqv3OTIEnii8WYf6Yu0wSp3PuLnHXvd7Tea7DL4p2byEcW3kzyJap6YJ4g8rxtJPfg==", "basket_detail"=>{"fv"=>"11", "name_product"=>"drabina 11", "product_id"=>"4", "basked_id"=>"5", "total_price"=>"100"}, "commit"=>"Create Basket detail"}
+Unpermitted parameters: :fv, :name_product, :basked_id, :total_price
+Completed 400 Bad Request in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: basket):
+  
+app/controllers/basket_detail_controller.rb:35:in `basket_params'
+app/controllers/basket_detail_controller.rb:18:in `create'
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 21:08:04 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"grAbOMCXyltFBc4vcieXrqv3OTIEnii8WYf6Yu0wSp3PuLnHXvd7Tea7DL4p2byEcW3kzyJap6YJ4g8rxtJPfg==", "basket_detail"=>{"fv"=>"11", "name_product"=>"drabina 11", "product_id"=>"4", "basked_id"=>"5", "total_price"=>"100"}, "commit"=>"Create Basket detail"}
+Unpermitted parameters: :fv, :name_product, :basked_id, :total_price
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 205ms (Views: 177.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 21:08:07 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8QG5AXfVQcBe+ITbZrufdBpN4ahLSFNUXVcGjiRB0d28CRv+6bXw1v1GRko9RbRewNc8VW2M3E4NMvPHD6PUPg==", "basket_detail"=>{"fv"=>"", "name_product"=>"", "product_id"=>"4", "basked_id"=>"5", "total_price"=>""}, "commit"=>"Create Basket detail"}
+Unpermitted parameters: :fv, :name_product, :basked_id, :total_price
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 170ms (Views: 164.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:08:30 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (1.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (43.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 222ms (Views: 209.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 21:08:35 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 173ms (Views: 163.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/basket_detail" for 127.0.0.1 at 2017-11-30 21:10:00 +0100
+Processing by BasketDetailController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F1u0BXaeXt8Dup/QhrwMilHSAHSDlt5T1TLdbcKRq25LfIP4+7fNWLBvGMfXhA1FUQL2MsS1B6EGpo0ysj5SMQ==", "basket_detail"=>{"fv"=>"", "name_product"=>"", "product_id"=>"1", "basked_id"=>"2", "total_price"=>""}, "commit"=>"Create Basket detail"}
+Unpermitted parameters: :fv, :name_product, :basked_id, :total_price
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 258ms (Views: 238.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:10:04 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (1.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (25.0ms)
+  Rendered layouts/_rails_default.html.erb (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 187ms (Views: 178.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:21:53 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (35.8ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 233ms (Views: 214.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:21:56 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (27.0ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 198ms (Views: 186.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:21:59 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 265ms (Views: 255.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:22:18 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (25.4ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 213ms (Views: 204.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:22:19 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (25.1ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 209ms (Views: 197.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:22:20 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 188ms (Views: 177.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:22:29 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details` INNER JOIN `baskets` ON `baskets`.`id` = `basket_details`.`basket_id` INNER JOIN `products` ON `products`.`id` = `basket_details`.`product_id`[0m
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 200ms (Views: 189.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:22:42 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details`[0m
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (41.9ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 223ms (Views: 210.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:22:44 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details`[0m
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_rails_default.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 182ms (Views: 171.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:22:45 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details`[0m
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 192ms (Views: 182.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:22:47 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details`[0m
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 205ms (Views: 193.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:22:48 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.0ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details`[0m
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 201ms (Views: 189.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/basket_detail" for 127.0.0.1 at 2017-11-30 21:23:22 +0100
+Processing by BasketDetailController#index as HTML
+  Rendering basket_detail/index.html.erb within layouts/application
+  [1m[36mBasketDetail Load (0.5ms)[0m  [1m[34mSELECT `basket_details`.* FROM `basket_details`[0m
+  [1m[36mBasket Load (0.5ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBasket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Basket Load (0.0ms)[0m  [1m[34mSELECT  `baskets`.* FROM `baskets` WHERE `baskets`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered basket_detail/index.html.erb within layouts/application (44.2ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 222ms (Views: 208.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 21:24:48 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 189ms (Views: 174.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basket_detail/new" for 127.0.0.1 at 2017-11-30 21:27:10 +0100
+Processing by BasketDetailController#new as HTML
+  Rendering basket_detail/new.html.erb within layouts/application
+  Rendered basket_detail/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_rails_default.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 173ms (Views: 164.3ms | ActiveRecord: 0.0ms)
+
+
