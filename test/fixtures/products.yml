@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  product_id: 1
-  cost: 1
+  vat: MyString
+  brutto_price: MyString
 
 two:
   name: MyString
-  product_id: 1
-  cost: 1
+  vat: MyString
+  brutto_price: MyString

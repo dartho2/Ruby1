@@ -1,0 +1,21 @@
+
+<h1>Allegro - basket</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Numer Faktury</th>
+    <th>Cenna</th>
+
+
+  </tr>
+  <% @baskets.each do |basket| %>
+      <tr>
+        <td><%= basket.id %></td>
+        <td><%= basket.number_fv %></td>
+        <td><%= basket.total_prce %></td>
+
+      </tr>
+
+  <% end %>
+</table>

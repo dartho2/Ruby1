@@ -1,0 +1,28 @@
+<%= form_with model: @basket_detail, url: basket_detail_url,  local: true do |form| %>
+
+
+    <p>
+      <%= form.label :fv %><br>
+      <%= form.text_field :fv %>
+    </p>
+    <p>
+      <%= form.label :name %><br>
+      <%= form.text_field :name %>
+    </p>
+    <p>
+      <%= form.label :product %><br>
+      <%= form.text_field :product %>
+    </p>
+    <p>
+      <%= form.label :cost %><br>
+      <%= form.text_field :cost %>
+    </p>
+
+
+
+
+    <p>
+      <%= form.submit %>
+    </p>
+
+<% end %>

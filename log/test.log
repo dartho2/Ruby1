@@ -1,0 +1,30 @@
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.0ms)[0m  [1m[31mDELETE FROM `allegros`[0m
+  [1m[36mFixture Insert (0.5ms)[0m  [1m[32mINSERT INTO `allegros` (`fv`, `name`, `product`, `cost`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 1, '2017-11-30 13:16:29', '2017-11-30 13:16:29', 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.0ms)[0m  [1m[31mDELETE FROM `allegros`[0m
+  [1m[36mFixture Insert (0.5ms)[0m  [1m[32mINSERT INTO `allegros` (`fv`, `name`, `product`, `cost`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 1, '2017-11-30 13:16:30', '2017-11-30 13:16:30', 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.0ms)[0m  [1m[31mDELETE FROM `allegros`[0m
+  [1m[36mFixture Insert (0.5ms)[0m  [1m[32mINSERT INTO `allegros` (`fv`, `name`, `product`, `cost`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 1, '2017-11-30 13:16:30', '2017-11-30 13:16:30', 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.5ms)[0m  [1m[31mDELETE FROM `allegros`[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO `allegros` (`fv`, `name`, `product`, `cost`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 1, '2017-11-30 13:16:30', '2017-11-30 13:16:30', 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m

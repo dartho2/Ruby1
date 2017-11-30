@@ -1,0 +1,21 @@
+
+<h1>Allegro - index</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Vat</th>
+    <th>Cena</th>
+
+  </tr>
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= product.id %></td>
+      <td><%= product.name %></td>
+      <td><%= product.vat %></td>
+      <td><%= product.brutto_price %></td>
+    </tr>
+
+<% end %>
+</table>

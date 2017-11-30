@@ -1,3 +1,4 @@
 class Allegro < ApplicationRecord
-  belongs_to :product
+  has_many :allegro_items
+
 end
