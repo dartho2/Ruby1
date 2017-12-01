@@ -19,26 +19,21 @@ class BasketDetailController < ApplicationController
   def create
     @product_detail = Product.new(b_params)
     @basket = Basket.new(a_params)
-    if @product_detail.save
-        if @basket.save
-          @b = @basket.id
-          @a = @product_detail.id
+
+        if @basket.save && @product_detail.save
+              @b = @basket.id
+              @a = @product_detail.id
               @basket_detail = BasketDetail.new(basket_id: @b, product_id: @a)
-2
+
           if @basket_detail.save
                 redirect_to basket_detail_index_path , notice: "Dodano FAKTURE"
             else
-              render 'new'
-            end
+              render 'new', notice: 'Bład zapisu basket_details'
+          end
 
         else
-          render 'new'
+        render 'new', notice: 'Bład zapisu Product/Basket'
         end
-
-      else
-        render 'new'
-
-      end
 
 
     end
