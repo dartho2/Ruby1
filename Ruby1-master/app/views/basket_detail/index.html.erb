@@ -1,0 +1,24 @@
+
+<h1>Allegro - index</h1>
+
+<table>
+  <tr>
+    <th>FV -  BASKETS</th>
+    <th>Product -  PRODUCTS</th>
+    <th>Cena - PRODUCT</th>
+
+  </tr>
+
+
+      <tr>  <% @basket_detail.each do |product|  %>
+
+            <td><%= product.basket.basket_fv %></td>
+            <td><%= product.product.name_product %></td>
+            <td><%= product.product.brutto_price %></td>
+
+      </tr>
+
+<% end %>
+  <%= link_to 'New', new_basket_detail_path %>
+</table>
+

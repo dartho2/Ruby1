@@ -17,3 +17,8 @@
     </nav>
   </div>
 </header>
+
+<% if flash[:notice] -%>
+    <div class = "alert alert-success"><%= notice %></div>
+<% end %>
+

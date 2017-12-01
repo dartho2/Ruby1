@@ -6,26 +6,54 @@ class BasketDetailController < ApplicationController
   def show
     @basket_detail = BasketDetail.new
   end
+  def edit
+    @basket_detail = BasketDetail.find(params[:id])
+  end
 
   def new
     @basket_detail = BasketDetail.new
+    @product_detail = Product.new
+    @basket = Basket.new
   end
 
   def create
-      @basket_detail = BasketDetail.new(basketdetail_params)
+    @product_detail = Product.new(b_params)
+    @basket = Basket.new(a_params)
+    if @product_detail.save
+        if @basket.save
+          @b = @basket.id
+          @a = @product_detail.id
+              @basket_detail = BasketDetail.new(basket_id: @b, product_id: @a)
+2
+          if @basket_detail.save
+                redirect_to basket_detail_index_path , notice: "Dodano FAKTURE"
+            else
+              render 'new'
+            end
 
-      if @basket_detail.save
-        redirect_to @basket_detail
+        else
+          render 'new'
+        end
+
       else
         render 'new'
+
       end
-  end
+
+
+    end
+
 
 
   private
-  def basketdetail_params
-    params.require(:basket_detail).permit(:product_id, :basket_id)
-
+  def a_params
+    params.require(:basket).permit(:id, :basket_fv, :total_price)
+  end
+  def b_params
+    params.require(:product).permit(:id, :name_product, :brutto_price)
+  end
+  def c_params
+    params.require(@basket_detail).permit(:id, :product_id, :basket_id)
   end
 
 

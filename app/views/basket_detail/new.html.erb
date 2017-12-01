@@ -1,29 +1,33 @@
 
 <h1>Add FV</h1>
 
-<%= form_with scope: @basket_detail, url: basket_detail_index_path , local: true do |form| %>
+<%= form_with scope: @product_detail, url: basket_detail_index_path , local: true do |form| %>
 
-
-    <p>
-      <%= form.label :fv %><br>
-      <%= form.text_field :fv %>
-    </p>
     <p>
       <%= form.label :name_product %><br>
-      <%= form.text_field :name_product %>
+      <%= form.collection_select(:name_product, Product.all, :name_product, :name_product, {multiple: true}) %>
     </p
+
     <p>
-      <%= form.label :product_id %><br>
-      <%= form.text_field :product_id %>
+      <%= form.label :brutto_price%><br>
+      <%= form.text_field :brutto_price %>
     </p
+
+<% end %>
+<%= form_with scope: @basket, url: basket_detail_index_path , local: true do |form| %>
+
+
+
     <p>
-      <%= form.label :basket_id %><br>
-      <%= form.text_field :basked_id %>
+      <%= form.label :basket_fv %><br>
+      <%= form.text_field :basket_fv %>
     </p
+
     <p>
-      <%= form.label :total_price %><br>
+      <%= form.label :total_price%><br>
       <%= form.text_field :total_price %>
-    </p>
+    </p
+
 
 
     <p>
@@ -33,6 +37,7 @@
 
 
 <% end %>
+
 
 
 
