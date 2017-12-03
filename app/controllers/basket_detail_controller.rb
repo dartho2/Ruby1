@@ -6,6 +6,7 @@ class BasketDetailController < ApplicationController
   def show
     @basket_detail = BasketDetail.new
   end
+
   def edit
     @basket_detail = BasketDetail.find(params[:id])
   end
@@ -19,34 +20,54 @@ class BasketDetailController < ApplicationController
   def create
     @product_detail = Product.new(b_params)
     @basket = Basket.new(a_params)
+    if @z = Product.find_by(name_product: @product_detail.name_product, brutto_price: @product_detail.brutto_price)
+      if @basket.save
+        @b = @basket.id
+        @a = @product_detail.id
+        @basket_detail = BasketDetail.new(basket_id: @b, product_id: @z.id)
 
-        if @basket.save && @product_detail.save
-              @b = @basket.id
-              @a = @product_detail.id
-              @basket_detail = BasketDetail.new(basket_id: @b, product_id: @a)
-
-          if @basket_detail.save
-                redirect_to basket_detail_index_path , notice: "Dodano FAKTURE"
-            else
-              render 'new', notice: 'Bład zapisu basket_details'
-          end
-
+        if @basket_detail.save
+          redirect_to basket_detail_index_path, notice: "Dodano FAKTURE"
         else
-        render 'new', notice: 'Bład zapisu Product/Basket'
+          render 'new', notice: 'Bład zapisu basket_details'
         end
+
+      else
+        render 'new', notice: 'Bład zapisu Product/Basket'
+      end
+
+
+    else
+      if @basket.save && @product_detail.save
+        @b = @basket.id
+        @a = @product_detail.id
+        @basket_detail = BasketDetail.new(basket_id: @b, product_id: @a)
+
+        if @basket_detail.save
+          redirect_to basket_detail_index_path, notice: "Dodano FAKTURE"
+        else
+          render 'new', notice: 'Bład zapisu basket_details'
+        end
+
+      else
+        render 'new', notice: 'Bład zapisu Product/Basket'
+      end
 
 
     end
 
+  end
 
 
   private
   def a_params
     params.require(:basket).permit(:id, :basket_fv, :total_price)
   end
+
   def b_params
     params.require(:product).permit(:id, :name_product, :brutto_price)
   end
+
   def c_params
     params.require(@basket_detail).permit(:id, :product_id, :basket_id)
   end
